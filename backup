@@ -17,6 +17,9 @@ ln -sf /home/juanes/dotfiles/omarchy/looknfeel.conf \
 ln -sf /home/juanes/dotfiles/omarchy/input.conf \
         /home/juanes/.config/hypr/input.conf
 
+ln -sf "$HOME"/dotfiles/omarchy/00-keyboard.conf \
+        "$HOME"/etc/X11/xorg.conf.d/00-keyboard.conf
+
 
 hyprctl reload
 
