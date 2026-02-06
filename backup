@@ -1,24 +1,6 @@
 #!/bin/bash
 
-mkdir -p "$HOME"/Pictures/Screenshots "$HOME"/Videos/Screencasts
-
 ln -sf "$HOME"/dotfiles/.bashrc "$HOME"/.bashrc
 ln -sf "$HOME"/dotfiles/.bash_profile "$HOME"/.bash_profile
 
-ln -sf /home/juanes/dotfiles/omarchy/bindings.conf \
-         /home/juanes/.config/hypr/bindings.conf
-
-ln -sf /home/juanes/dotfiles/omarchy/default \
-        /home/juanes/.config/uwsm/default
-
-ln -sf /home/juanes/dotfiles/omarchy/looknfeel.conf \
-         /home/juanes/.config/hypr/looknfeel.conf
-
-ln -sf /home/juanes/dotfiles/omarchy/input.conf \
-        /home/juanes/.config/hypr/input.conf
-
-
-hyprctl reload
-
 echo "Dotfiles updated successfully!"
-
