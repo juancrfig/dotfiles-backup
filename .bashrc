@@ -12,3 +12,9 @@ source ~/.local/share/omarchy/default/bash/rc
 
 alias vi='vim'
 alias v='nvim'
+
+. "$HOME/.local/share/../bin/env"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# OpenClaw Completion
+source "/home/juanes/.openclaw/completions/openclaw.bash"
