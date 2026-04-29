@@ -13,8 +13,15 @@ source ~/.local/share/omarchy/default/bash/rc
 alias vi='vim'
 alias v='nvim'
 
-. "$HOME/.local/share/../bin/env"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# pnpm
+export PNPM_HOME="/home/juanes/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
-# OpenClaw Completion
-source "/home/juanes/.openclaw/completions/openclaw.bash"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+
+. "$HOME/.local/share/../bin/env"
+
